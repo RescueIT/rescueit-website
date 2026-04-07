@@ -20,7 +20,7 @@
         </nav>
         <div class="cta-group">
           <a class="btn primary" href="ai-labs.html">AI Labs</a>
-          <a class="btn" href="#contact">Free Evaluation</a>
+          <a class="btn primary" href="#contact">Free Evaluation</a>
         </div>
       </div>
     </header>
@@ -111,7 +111,36 @@
       <section id="contact" class="section">
         <div class="container contact-grid">
           <div class="panel"><div class="panel-kicker">Get in Touch</div><div class="panel-title">Ready to elevate your IT experience?</div><div class="panel-copy">Contact RescueIT today for a free technology evaluation. We'll assess your current infrastructure, identify opportunities for improvement, and show you how managed IT services can transform your business operations.</div></div>
-          <div class="panel"><div class="contact-item"><div class="contact-label">Phone</div><div class="contact-value">780-801-7160</div></div><div class="contact-item"><div class="contact-label">Email</div><div class="contact-value">info@rescueit.ca</div></div><div class="contact-item"><div class="contact-label">Portal</div><div class="contact-value">rescueitsupport.ca</div></div></div>
+          <div class="panel">
+            <!-- HubSpot Embedded Form - Load HubSpot form library -->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            <div id="hubspot-form-wrapper"></div>
+            <script>
+              // HubSpot form embed - You need to create a form in HubSpot first
+              // Go to HubSpot > Marketing > Lead Capture > Forms
+              // Create a new form with fields: Name, Email, Phone, Company, Message
+              // Then replace REPLACE_WITH_FORM_ID below with your actual form ID
+              
+              hbspt.forms.create({
+                region: "na3",
+                portalId: "342808547",
+                formId: "REPLACE_WITH_FORM_ID", // TODO: Create form in HubSpot and add ID here
+                target: "#hubspot-form-wrapper",
+                onFormReady: function($form) {
+                  console.log('HubSpot form loaded');
+                },
+                onFormSubmit: function($form) {
+                  console.log('Form submitted to HubSpot');
+                }
+              });
+            </script>
+            <!-- Fallback message if form ID not set -->
+            <noscript>
+              <p style="padding:20px;background:#f8d7da;border:1px solid #f5c6cb;border-radius:8px;color:#721c24;">
+                Please enable JavaScript to use our contact form, or email us directly at <a href="mailto:info@rescueit.ca" style="color:#721c24;text-decoration:underline;">info@rescueit.ca</a> or call 780-801-7160.
+              </p>
+            </noscript>
+          </div>
         </div>
       </section>
     </main>
