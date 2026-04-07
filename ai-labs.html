@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Labs — Powered by RescueIT</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .labs-hero{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:76px 24px 56px;overflow:hidden}
+    .labs-hero::before{content:'';position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:760px;height:760px;border-radius:50%;background:radial-gradient(circle, rgba(232,28,28,.14) 0%, rgba(232,28,28,.05) 34%, transparent 72%)}
+    .labs-powered-top{display:flex;align-items:center;gap:12px;margin-bottom:36px;padding:8px 18px;border:1px solid rgba(204,17,17,0.16);background:#fff;backdrop-filter:blur(8px);box-shadow:var(--shadow);border-radius:999px}
+    .labs-powered-top img{width:28px;height:28px;object-fit:contain}.labs-powered-text{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;color:#6b7280;text-transform:uppercase}.labs-powered-text strong{color:#e81c1c;font-weight:500}
+    .labs-main-title{line-height:1;margin-bottom:6px}.labs-main-title .lbl-ai{font-family:'Orbitron',sans-serif;font-weight:800;font-size:clamp(86px,16vw,150px);letter-spacing:-2px;background:linear-gradient(160deg,#111827 0%, #374151 35%, #E81C1C 65%, #8B0000 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;line-height:.9}.labs-main-title .lbl-labs{font-family:'Orbitron',sans-serif;font-weight:700;font-size:clamp(30px,5.6vw,54px);letter-spacing:18px;color:#6b7280;display:block;text-transform:uppercase;margin-top:4px}
+    .labs-powered-line{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:22px;margin-bottom:10px}.labs-rule{width:60px;height:1px;background:linear-gradient(90deg, transparent, rgba(204,17,17,0.5))}.labs-rule.right{background:linear-gradient(90deg, rgba(204,17,17,0.5), transparent)}.labs-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;color:rgba(17,24,39,0.45);text-transform:uppercase}
+    .labs-rescueit-mark{display:flex;align-items:center;gap:14px;margin-bottom:18px}.labs-rescueit-mark img{width:46px;height:46px;object-fit:contain}.labs-rm-name{font-family:'Orbitron',sans-serif;font-weight:800;font-size:20px;letter-spacing:1px;line-height:1}.labs-rm-name .r{color:#e81c1c}.labs-rm-name .it{color:#111827}.labs-rm-sub{font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:4px;color:rgba(17,24,39,0.4);text-transform:uppercase;margin-top:4px}
+    .labs-tagline{font-family:'IBM Plex Mono',monospace;font-size:12px;color:rgba(17,24,39,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:32px;margin-bottom:20px}.labs-copy{max-width:820px;font-size:18px;line-height:1.75;color:#374151;margin-bottom:26px}.hero-pill{background:#fff;border-color:rgba(204,17,17,.14);color:#4b5563}
+    .labs-card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;width:100%;max-width:1080px;margin-top:46px}.labs-card{padding:28px 24px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);position:relative}.labs-card::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg, transparent, #cc1111, transparent);transform:scaleX(0);transition:transform .35s ease}.labs-card:hover::after{transform:scaleX(1)}.labs-card-no{font-family:'Orbitron',sans-serif;font-size:10px;color:rgba(204,17,17,0.5);letter-spacing:2px;margin-bottom:16px;font-weight:700}.labs-card-icon{font-size:26px;margin-bottom:14px}.labs-card-title{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:800;letter-spacing:2px;color:#e81c1c;text-transform:uppercase;margin-bottom:10px}.labs-card-copy{font-size:14px;color:#4b5563;line-height:1.7}
+    @media (max-width:1100px){.labs-card-grid{grid-template-columns:repeat(2,1fr)}} @media (max-width:720px){.labs-main-title .lbl-labs{letter-spacing:10px}.labs-card-grid{grid-template-columns:1fr}.labs-copy{font-size:16px}.labs-rescueit-mark{transform:scale(.95)}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="index.html"><img class="brand-logo" src="logo.png" alt="RescueIT logo" /><div><div class="brand-name"><span class="r">RESCUE</span><span class="it">IT</span></div><div class="brand-sub">Managed IT Services · Alberta</div></div></a>
+        <nav class="nav"><a href="index.html">Home</a><a class="active" href="ai-labs.html">AI Labs</a><a href="index.html#contact">Contact</a></nav>
+        <div class="cta-group"><a class="btn" href="index.html">Main Site</a><a class="btn primary" href="index.html#contact">Talk to RescueIT</a></div>
+      </div>
+    </header>
+
+    <section class="labs-hero">
+      <div class="labs-powered-top"><img src="logo.png" alt="RescueIT logo" /><div class="labs-powered-text">A <strong>RescueIT</strong> Initiative</div></div>
+      <div class="labs-main-title"><span class="lbl-ai">AI</span><span class="lbl-labs">L A B S</span></div>
+      <div class="labs-powered-line"><div class="labs-rule"></div><span class="labs-label">Powered by</span><div class="labs-rule right"></div></div>
+      <div class="labs-rescueit-mark"><img src="logo.png" alt="RescueIT logo" /><div><div class="labs-rm-name"><span class="r">RESCUE</span><span class="it">IT</span></div><div class="labs-rm-sub">Managed I.T. Services</div></div></div>
+      <div style="width:260px;max-width:80vw;height:1px;background:linear-gradient(90deg,transparent,rgba(204,17,17,0.28),transparent);margin:18px auto 0;"></div>
+      <p class="labs-tagline">Intelligent Systems · Autonomous Solutions · Next-Gen IT</p>
+      <p class="labs-copy">AI Labs is the innovation layer of RescueIT — a place for automation, analytics, AI-assisted support experiences, and future-facing service concepts, presented with the more professional supporting typography from this variant.</p>
+      <div class="hero-list"><div class="hero-pill">Machine Learning</div><div class="hero-pill">AI Automation</div><div class="hero-pill">Threat Intelligence</div><div class="hero-pill">Smart Analytics</div><div class="hero-pill">AI Assist</div></div>
+      <div class="labs-card-grid">
+        <div class="labs-card"><div class="labs-card-no">01</div><div class="labs-card-icon">⚡</div><div class="labs-card-title">Automation</div><div class="labs-card-copy">Workflow systems that reduce manual effort and help repeated tasks become cleaner and more scalable.</div></div>
+        <div class="labs-card"><div class="labs-card-no">02</div><div class="labs-card-icon">🛡</div><div class="labs-card-title">Defense</div><div class="labs-card-copy">Faster signal detection, earlier awareness, and operational visibility that support better security response.</div></div>
+        <div class="labs-card"><div class="labs-card-no">03</div><div class="labs-card-icon">🧠</div><div class="labs-card-title">Analytics</div><div class="labs-card-copy">Clearer reporting and better insight into what matters, what is changing, and where friction still exists.</div></div>
+        <div class="labs-card"><div class="labs-card-no">04</div><div class="labs-card-icon">🤖</div><div class="labs-card-title">AI Assist</div><div class="labs-card-copy">Conversational and operational AI that helps support experiences feel faster, smarter, and more responsive.</div></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
