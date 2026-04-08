@@ -15,7 +15,34 @@
     .labs-rescueit-mark{display:flex;align-items:center;gap:14px;margin-bottom:18px}.labs-rescueit-mark img{width:46px;height:46px;object-fit:contain}.labs-rm-name{font-family:'Orbitron',sans-serif;font-weight:800;font-size:20px;letter-spacing:1px;line-height:1}.labs-rm-name .r{color:#e81c1c}.labs-rm-name .it{color:#111827}.labs-rm-sub{font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:4px;color:rgba(17,24,39,0.4);text-transform:uppercase;margin-top:4px}
     .labs-tagline{font-family:'IBM Plex Mono',monospace;font-size:12px;color:rgba(17,24,39,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:32px;margin-bottom:20px}.labs-copy{max-width:820px;font-size:18px;line-height:1.75;color:#374151;margin-bottom:26px}.hero-pill{background:#fff;border-color:rgba(204,17,17,.14);color:#4b5563}
     .labs-card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;width:100%;max-width:1080px;margin-top:46px}.labs-card{padding:28px 24px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);position:relative}.labs-card::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg, transparent, #cc1111, transparent);transform:scaleX(0);transition:transform .35s ease}.labs-card:hover::after{transform:scaleX(1)}.labs-card-no{font-family:'Orbitron',sans-serif;font-size:10px;color:rgba(204,17,17,0.5);letter-spacing:2px;margin-bottom:16px;font-weight:700}.labs-card-icon{font-size:26px;margin-bottom:14px}.labs-card-title{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:800;letter-spacing:2px;color:#e81c1c;text-transform:uppercase;margin-bottom:10px}.labs-card-copy{font-size:14px;color:#4b5563;line-height:1.7}
-    @media (max-width:1100px){.labs-card-grid{grid-template-columns:repeat(2,1fr)}} @media (max-width:720px){.labs-main-title .lbl-labs{letter-spacing:10px}.labs-card-grid{grid-template-columns:1fr}.labs-copy{font-size:16px}.labs-rescueit-mark{transform:scale(.95)}}
+    @media (max-width:1100px){.labs-card-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:820px){
+      .labs-hero{padding:56px 20px 42px}
+      .labs-powered-top{padding:6px 14px;margin-bottom:28px}
+      .labs-powered-top img{width:24px;height:24px}
+      .labs-powered-text{font-size:10px;letter-spacing:1.5px}
+      .labs-main-title .lbl-ai{font-size:clamp(64px,14vw,110px)}
+      .labs-main-title .lbl-labs{font-size:clamp(24px,5vw,42px);letter-spacing:10px}
+      .labs-rule{width:40px}
+      .labs-label{font-size:9px}
+      .labs-rescueit-mark{transform:scale(.9);margin-bottom:14px}
+      .labs-rescueit-mark img{width:38px;height:38px}
+      .labs-rm-name{font-size:18px}
+      .labs-tagline{font-size:11px;letter-spacing:1.5px;margin-top:24px;margin-bottom:16px}
+      .labs-copy{font-size:16px;line-height:1.7;margin-bottom:20px}
+      .labs-card-grid{grid-template-columns:1fr;gap:14px;margin-top:36px}
+      .labs-card{padding:22px 18px}
+      .labs-card-icon{font-size:24px;margin-bottom:12px}
+      .labs-card-title{font-size:10px}
+      .labs-card-copy{font-size:14px}
+    }
+    @media (max-width:480px){
+      .labs-hero{padding:42px 16px 32px}
+      .labs-main-title .lbl-ai{font-size:clamp(56px,12vw,90px)}
+      .labs-main-title .lbl-labs{font-size:clamp(20px,4.5vw,36px);letter-spacing:8px}
+      .labs-copy{font-size:15px}
+      .labs-card{padding:20px 16px}
+    }
   </style>
 </head>
 <body>
