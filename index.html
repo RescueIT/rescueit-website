@@ -149,32 +149,11 @@
             </div>
           </div>
           <div class="panel">
-            <!-- HubSpot Embedded Form - Load HubSpot form library -->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-            <div id="hubspot-form-wrapper"></div>
-            <script>
-              // HubSpot form embed - You need to create a form in HubSpot first
-              // Go to HubSpot > Marketing > Lead Capture > Forms
-              // Create a new form with fields: Name, Email, Phone, Company, Message
-              // Then replace REPLACE_WITH_FORM_ID below with your actual form ID
-              
-              hbspt.forms.create({
-                region: "na3",
-                portalId: "342808547",
-                formId: "REPLACE_WITH_FORM_ID", // TODO: Create form in HubSpot and add ID here
-                target: "#hubspot-form-wrapper",
-                onFormReady: function($form) {
-                  console.log('HubSpot form loaded');
-                },
-                onFormSubmit: function($form) {
-                  console.log('Form submitted to HubSpot');
-                }
-              });
-            </script>
-            <!-- Fallback message if form ID not set -->
+            <script src="https://js-na3.hsforms.net/forms/embed/342808547.js" defer></script>
+            <div class="hs-form-frame" data-region="na3" data-form-id="e8331805-c0a1-48e8-ad27-73ec09d22c32" data-portal-id="342808547"></div>
             <noscript>
               <p style="padding:20px;background:#f8d7da;border:1px solid #f5c6cb;border-radius:8px;color:#721c24;">
-                Please enable JavaScript to use our contact form, or email us directly at <a href="mailto:info@rescueit.ca" style="color:#721c24;text-decoration:underline;">info@rescueit.ca</a> or call 780-801-7160.
+                Please enable JavaScript to use our contact form, or email us directly at <a href="mailto:support@rescueit.ca" style="color:#721c24;text-decoration:underline;">support@rescueit.ca</a> or call 780-801-7160.
               </p>
             </noscript>
           </div>
